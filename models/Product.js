@@ -35,7 +35,7 @@ Product.init(
         }
       },
       category_id: {
-        type: DataType.INTEGER,
+        type: DataTypes.INTEGER,
         // defines that this field is a reference to the category table and the column of id
         references: {
           model: 'category',

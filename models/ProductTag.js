@@ -22,9 +22,12 @@ ProductTag.init(
       }
     },
     tag_id: {
-      model: 'tag',
-      key: 'id',
-      unique: false
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'tag',
+        key: 'id',
+        unique: false
+      }
     }
   },
   {
